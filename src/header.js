@@ -1,47 +1,52 @@
 import React from 'react';
 import logo from './card-back.jpg';
 import logo1 from './master.PNG';
-import logo2 from './puce.png';
+import logo2 from './puce0.png';
 import { findIconDefinition, icon } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import   NameForm from './forms'; 
+import App from './App';
 import './header.css';
-console.log(logo);
 
 
-const Hello = () => {
-    return <div className="container">
+
+
+class Hello extends React.Component {
+  render(){  
+  return<div>
+      <div className="container">
    
       <div className="credit-card">
      
       <div> <p className="credit">CREDIT CARD</p> </div>
       <Puce />
-      <div className="number-section"> <p  className="number"><span>7854</span><span>1234</span><span> 1235 </span><span>2547</span></p></div>
+      <div className="number-section"> <p  className="number">{this.props.serial}</p></div>
      <div className="info">
      <div className="info1">
        <p className="card-holder">5422</p>
-      <p className="name">Firas Hamdouni</p> 
+      <p className="name">{this.props.value}</p> 
       </div>
       <div className="validation">
         <div className="haut"><Next /></div>
         <div className="bas">
         <p className="my">MONTH/YEAR</p>
-        <div className="dh"><p className="nm">11/50</p></div>
+        <div className="dh"><p className="nm">{this.props.valid}</p></div>
         <div className="db"></div>
         </div>
       </div>
           <Card />
       </div>
     </div>
+    </div> 
     </div>
-            
-
+}
   }
 
   const Master =()  => {
-    // Import result is the URL of your image
-    return <img src={logo} className="logo" alt="Logo" />;
-  }
-  const Card =()  => {
+ 
+     return <img src={logo} className="logo" alt="Logo" />;
+   }
+   const Card =()  => {
     // Import result is the URL of your image
     return <img src={logo1} className="logo1" alt="Logo1" />;
   }

@@ -1,8 +1,6 @@
 .container{
     height:690px;
     width: 1450px;
-    background-color: black;
-  
 }
 .logo{
     height: 100%;
@@ -27,9 +25,9 @@
 .credit-card{
     position: absolute;
     height: 50%;
-    width:40%;
+    width:90%;
     top: 5%;
-    left: 10%;
+    left: 3%;
     border: 2px solid white;
     border-radius: 5%;
     background: url(back.jpg) no-repeat center center; 
