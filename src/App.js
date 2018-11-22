@@ -57,7 +57,7 @@ render(){
       {/* <div className="col-lg-6">
         <Hello/></div> */}
         <div className="container-fluid col-lg-6">
-             < Hello  value={this.state.value} valid={this.state.valid}/></div>
+             < Hello  value={this.state.value} valid={this.state.valid}  serial={this.state.serial}/></div>
        <div className="container-fluid col-lg-6 mt-5"><NameForm value={this.state.value} valid={this.state.valid} serial={this.state.serial}
                   handleChange={this.handleChange} validlistener={this.validlistener} validthruvalidation={this.validthruvalidation} number={this.number}/></div> 
    
